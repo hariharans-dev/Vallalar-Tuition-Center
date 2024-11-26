@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>P3 -Smart Tuition</title>
+    <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon -->
+        <link href="images/smart-tuition-logo.ico" rel="shortcut icon" type="image/x-icon">
+
+    <!--font CSS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&display=swap" rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- style CSS -->
+        <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- Add icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+
+</head>
+<body>
+    <div class="navigation">
+        <nav class="header navbar-expand-lg">
+            <div class="logo">
+                <a class="navbar-brand" href="./index.html"><img src="./images/bg/logo_smarttuition.png" alt="Logo of Smart Tuition"></a>
+            </div>
+            <div class="pos-f-t navigation">
+                <nav class="navbar navbar-light hamburg">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" style="background-color: #D1D4D6;">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </nav>
+                <div class="collapse" id="navbarToggleExternalContent">
+                    <div class="p-4">
+                        <ul class="topnav">
+                            <li id="link0"><a class="link applylink" href="index.html">HOME</a></li>
+                            <li id="link1"><a class="link opennav" id="nav1" href="javascript:void(0)" onclick="openNav1()">ABOUT US <span class="downarrow">&#9662</span></a></li>
+                            <ul class="navigat" id="navigat1">
+                                <li><a class="hovlink" href="beliefs.html">OUR TEACHING METHODS</a></li>
+                                <li><a class="hovlink" href="testimonial.html">OUR TESTIMONIALS</a></li>
+                                <li><a class="hovlink" href="contact.html">CONTACT US</a></li>
+                                <li><a class="hovlink" href="about.html">ABOUT US</a></li>
+                            </ul>
+                            <li id="link2"><a class="link opennav" id="nav2" href="javascript:void(0)" onclick="openNav2()">PROGRAMS <span class="downarrow">&#9662</span></a></li>
+                            <ul class="navigat" id="navigat2">
+                                <li><a class="hovlink" href="fees.html">OUR PROGRAM FEES</a></li>
+                                <li><a class="hovlink" href="typesofprograms.html">TYPES OF PROGRAMS</a></li>
+                            </ul>
+                            <li id="link3"><a class="link opennav" id="nav3" href="javascript:void(0)" onclick="openNav3()">ACADEMIC LEVELS <span class="downarrow">&#9662</span></a></li>
+                            <ul class="navigat" id="navigat3">
+                                <li><a class="hovlink" href="n2learnmore.html">NURSERY 2</a></li>
+                                <li><a class="hovlink" href="k1learnmore.html">KINDERGARTEN 1</a></li>
+                                <li><a class="hovlink" href="k2learnmore.html">KINDERGARTEN 2</a></li>
+                                <li><a class="hovlink" href="p1learnmore.html">PRIMARY 1</a></li>
+                                <li><a class="hovlink" href="p2learnmore.html">PRIMARY 2</a></li>
+                                <li><a class="hovlink" href="p3learnmore.html">PRIMARY 3</a></li>
+                            </ul>
+                            <li id="link4"><a class="link applylink" href="applynow.html">APPLY NOW</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <ul class="navigbar">
+                <li id="link0"><a class="link applylink" href="index.html">HOME</a></li>
+                <li id="link1"><a class="link opennav" id="aboutusid" href="about.html" onmouseenter="document.getElementById('aboutusnav').style.display = 'block'; document.getElementById('aboutusid').style.color = 'white' ;" onmouseleave="document.getElementById('aboutusnav').style.display = 'none'; document.getElementById('aboutusid').style.color = 'black' ;">ABOUT US <span class="downarrow">&#9662</span></a></li>
+
+                <li id="link2"><a class="link opennav" id="programsid" href="typesofprograms.html" onmouseenter="document.getElementById('programsnav').style.display = 'block'; document.getElementById('programsid').style.color = 'white' ;" onmouseleave="document.getElementById('programsnav').style.display = 'none'; document.getElementById('programsid').style.color = 'black' ;">PROGRAMS <span class="downarrow">&#9662</span></a></li>
+
+                <li id="link3"><a class="link opennav" id="academiclevelid" onmouseenter="document.getElementById('academiclevelnav').style.display = 'block'; document.getElementById('academiclevelid').style.color = 'white' ;" onmouseleave="document.getElementById('academiclevelnav').style.display = 'none'; document.getElementById('academiclevelid').style.color = 'black' ;">ACADEMIC LEVELS <span class="downarrow">&#9662</span></a></li>
+                &nbsp &nbsp
+                <li id="link4"><a class="link applylink" href="applynow.html">APPLY NOW</a></li>
+            </ul>
+        </nav>
+    </div>
+    <span class="clear"></span>
+    <div class="hovnav" id="aboutusnav" onmouseleave="document.getElementById('aboutusnav').style.display = 'none'; document.getElementById('aboutusid').style.color = 'black' ;" style="margin-right: 360px;" onmouseenter="document.getElementById('aboutusnav').style.display = 'block'; document.getElementById('aboutusid').style.color = 'white' ;">
+                    <ul class="aboutusnav">
+                        <li><a class="hovlink" href="beliefs.html">OUR TEACHING METHODS</a></li>
+                        <li><a class="hovlink" href="testimonial.html">OUR TESTIMONIALS</a></li>
+                        <li><a class="hovlink" href="contact.html">CONTACT US</a></li>
+                        <li><a class="hovlink" href="about.html">ABOUT US</a></li>
+                    </ul>
+    </div>
+    <div class="hovnav" id="programsnav" onmouseleave="document.getElementById('programsnav').style.display = 'none'; document.getElementById('programsid').style.color = 'black' ;" style="margin-right: 250px;" onmouseenter="document.getElementById('programsnav').style.display = 'block'; document.getElementById('programsid').style.color = 'white' ;">
+                    <ul class="programsnav">
+                        <li><a class="hovlink" href="fees.html">OUR PROGRAM FEES</a></li>
+                        <li><a class="hovlink" href="typesofprograms.html">TYPES OF PROGRAMS</a></li>
+                    </ul>
+    </div>
+    <div class="hovnav" id="academiclevelnav" onmouseleave="document.getElementById('academiclevelnav').style.display = 'none'; document.getElementById('academiclevelid').style.color = 'black' ;" style="margin-right: 140px;" onmouseenter="document.getElementById('academiclevelnav').style.display = 'block'; document.getElementById('academiclevelid').style.color = 'white' ;">
+                    <ul class="academiclevelnav">
+                        <li><a class="hovlink" href="n2learnmore.html">NURSERY 2</a></li>
+                        <li><a class="hovlink" href="k1learnmore.html">KINDERGARTEN 1</a></li>
+                        <li><a class="hovlink" href="k2learnmore.html">KINDERGARTEN 2</a></li>
+                        <li><a class="hovlink" href="p1learnmore.html">PRIMARY 1</a></li>
+                        <li><a class="hovlink" href="p2learnmore.html">PRIMARY 2</a></li>
+                        <li><a class="hovlink" href="p3learnmore.html">PRIMARY 3</a></li>
+                    </ul>
+    </div>
+    </div>
+
+    <div class="typesofprogramscontainer">
+        <img src="./images/bg/Smart Tuition TestimonialHeader.png" alt="Primary School class at Smart Tuition" class="mainimageright">
+        <div class="typesofprogramstext">
+            <div class="typesofprogramsmaintext">
+                Our Testimonials
+            </div>
+            <div class="typesofprogramsmainsubtext">
+                We guarantee you quality and results...
+            </div>
+            <div class="findoutmoreclick">
+                <a href="#hearstudent" class="findoutmorelink" style="letter-spacing: 10px;">SCROLL DOWN...</a>
+            </div>
+        </div>
+    </div>
+
+    <p class="text-center text-dark-blue testi-head mb-2" id="hearstudent">Hear From Our Students</p>
+    <hr class="gray-divider">
+
+    <section class="py-md-5 py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 p-md-5 p-4 left">
+                    <h4 class="heading">“Studying is so much more fun here. Study smart not hard.”</h4>
+
+                    <p class="author text-dark-blue mt-4 mb-0">Lim Kuan Hwee Sean</p>
+                    <p class="desc text-dark-blue">Smart Tuition Almnus (K2-JC2)</p>
+                </div>
+
+                <div class="col-lg-7 bg-dark-blue rounded-md right shadow">
+                    <p class="text-light smallte"> 
+                        "I have been attending classes at Smart Tuition for as long as I can remember. The staff and teachers here are both professional and passionate. You can really see the passion they have when interacting with the students. They are really good role models who aim to shape the minds of the future generation. They make learning more fun and enjoyable, ensuring that we are always prepared for the exams. Throughout my time at Smart Tuition, I have seen myself grow and develop not just academically but holistically as a person. For that, I am always grateful for Smart Tuition." 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-md-5 py-3 mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 p-md-5 p-4 left">
+                    <h4 class="heading">“A kind and warm hearted teacher. Mr Yap truly inspired me and all my classmates
+                        to work harder and never give up."</h4>
+
+                    <p class="author text-dark-blue mt-4 mb-0">Johnny Tan Yao Ming</p>
+                    <p class="desc text-dark-blue">Smart Tuition Almnus (P1-JC2)</p>
+                </div>
+
+                <div class="col-lg-7 bg-dark-blue rounded-md right shadow">
+                    <p class="text-light smallte"> 
+                        "They have the best teachers here at Smart Tuition. Mr Yap was one of the best teachers I've ever encountered while schooling. Mr Yap truly inspired me and all my classmates
+                        to work harder and never give up. He makes learning fun and enjoyable while at the same time making sure we are always prepared for the examinations. Anyone can see the passion the teachers here have for teaching. I was constantantly scraping by my examinations until I had extra classes here. I managed to get striaght As and eventually got into a top Junior College. Thank you Smart Tuition. "
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="home-third-section" class=" pt-1 pb-4 mb-5 bg-dark-blue">
+        <div class="container">
+            <p class=" heading text-light">Track Records</p>
+            <div class="row justify-content-between">
+                <div class="col-lg-3 col-md-4">
+                    <div class="icon-box rounded-md mx-auto">
+                        <img src="./images/bg/Smart Tuition A+ icon.png" alt="A plus grades achieved by students at Smart Tuition">
+                    </div>
+                    <p class="detail  text-light text-center mt-4">99% Achieved Top Scores in Final Exams</p>
+                </div>
+
+                <div class="col-lg-3 col-md-4">
+                    <div class="icon-box rounded-md mx-auto">
+                        <img src="./images/bg/Smart Tuition Reading Icon.png" alt="Majority of students score top scores at Final Exams at Smart Tuition">
+                    </div>
+                    <p class="detail  text-light text-center mt-4">More Than 2500 Students</p>
+                </div>
+
+                <div class="col-lg-3 col-md-4">
+                    <div class="icon-box rounded-md mx-auto">
+                        <img src="./images/bg/Smart Tuition 5 Stars Icon.png" alt="5 out of 5 ratings by parents and students of Smart Tuition">
+                    </div>
+                    <p class="detail  text-light text-center mt-4">Rated 5/5 By Students and Parents</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script>
+
+        var timesClicked1 = 1;
+        var timesClicked2 = 2;
+        var timesClicked3 = 3;
+
+        function openNav1() {
+            timesClicked1++;
+
+                if (timesClicked1%2==0) {
+                //run second function
+                    document.getElementById('navigat1').style.display='block';
+                } else {
+                //run first function
+                    document.getElementById('navigat1').style.display='none';
+                }
+        }
+
+        function openNav2() {
+            timesClicked2++;
+
+                if (timesClicked2%2==0) {
+                //run second function
+                    document.getElementById('navigat2').style.display='block';
+                } else {
+                //run first function
+                    document.getElementById('navigat2').style.display='none';
+                }
+        }
+
+        function openNav3() {
+            timesClicked3++;
+
+                if (timesClicked3%2==0) {
+                //run second function
+                    document.getElementById('navigat3').style.display='block';
+                } else {
+                //run first function
+                    document.getElementById('navigat3').style.display='none';
+                }
+        }
+    </script>
+
+</body>
+<footer>
+    <div class="socmedbar">
+        <a href="http://www.instagram.com"><img src="images/About Us/instagram.png" class="socmed"></a>
+        <a href="http://www.facebook.com"><img src="images/About Us/facebook.png" class="socmed"></a>
+    </div>
+    <div>
+    <ul class="footerlinks">
+            <li id="link1"><a class="footlink" href="about.html">About Us</a></li>
+            |
+            <li id="link2"><a class="footlink" href="typesofprograms.html">Programs</a></li>
+            |
+            <li id="link3"><a class="footlink" href="applynow.html">Apply Now</a></li>
+            |
+            <li id="link4"><a class="footlink" href="privacypolicy.html">Privacy Policy</a></li>
+    </ul>
+    </div>
+    <div class="footercopy">
+        &copy 2021 Smart Tuition Pte Ltd
+    </div>
+</footer>
+</html>
